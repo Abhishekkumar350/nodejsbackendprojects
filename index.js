@@ -26,10 +26,13 @@ const server = http.createServer((req,res)=>{
 //product page
     }else if (pathName==='/product'){
         res.end('This is the PRODUCT');
+//api
     }else if (pathName==='/api'){
        
         res.writeHead(200,{'content-type':'application/json'})
         res.end(data);
+//NOT FOUND
+
        }else{
             res.writeHead(404,{
             'constent-type': 'text/html',
